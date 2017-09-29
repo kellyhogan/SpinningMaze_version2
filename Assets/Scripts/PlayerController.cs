@@ -29,10 +29,6 @@ public class PlayerController : MonoBehaviour {
         transform.Translate(movement * Time.deltaTime * speed);
 
         GetComponent<Rigidbody>().AddForce(world.transform.up * -9.8f);
-        //GetComponent<Rigidbody>().AddForce(new Vector3(-9.8f, -9.8f, -9.8f));
-        //GetComponent<Rigidbody>().AddForce(transform.up * -9.8f);
-
-
     }
 
     void OnTriggerEnter(Collider other)
